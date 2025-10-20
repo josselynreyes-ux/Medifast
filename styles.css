@@ -1,0 +1,148 @@
+/* Declaration of variables CSS */
+:root {
+    --colorUno: #57B98D; /* Fondo principal (Verde Oscuro) */
+    --colorDos: #76D7A8; /* Verde Claro (Logo Navbar) */
+    --colorTres: #65E594;
+    --colorCuatro: #52CA76; /* Verde Medio */
+    --colorCinco: #F2F1EC; /* Fondo Navbar */
+    --colorSeis: #000000; /* Negro */
+    --fuentePrincipal: "Roboto", sans-serif;
+    --fuenteSecundaria: "Lato", sans-serif;
+    
+    --color-text-dark: var(--colorSeis);
+}
+
+
+html {
+    
+    background-color: var(--colorCinco); 
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    margin: 0;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colorCinco); 
+    padding: 15px 0; 
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar__logo{
+    color: var(--colorDos);
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+ul{
+    
+    border: none; 
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+ul li a{
+    color: var(--colorSeis);
+    text-decoration: none;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+ul li:last-child a{
+    color: var(--colorCuatro); 
+    font-weight: 700;
+    border: 1px solid var(--colorCuatro); 
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.container_logo {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    min-height: 80vh; 
+}
+
+
+.header-section {
+    flex: 2; 
+    background-color: var(--colorUno); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    padding: 40px 0 40px 60px; 
+    box-sizing: border-box;
+}
+
+.logo {
+    
+    font-family: serif; 
+    font-size: 5vw; 
+    font-weight: 700;
+    color:var(--colorSeis); 
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.tagline {
+    
+    background-color: var(--colorCuatro);
+    color: var(--colorSeis); 
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding: 15px 15px; 
+    margin: 0;
+    align-self: flex-start; 
+}
+
+.start-button {
+    background-color: var(--colorCuatro);
+    color: var(--colorSeis); 
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.5rem; 
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s;
+    align-self: flex-start; 
+}
+
+.image-section {
+    flex: 1.5; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    transform: none; 
+}
+
+
